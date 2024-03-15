@@ -42,7 +42,7 @@ def get_bot_response(user_input):
     most_similar_index = similarity_scores.argmax()
 
     # If the similarity score is below the threshold, return the default message
-    if similarity_scores[0, most_similar_index] < 0.4:  # Set your desired threshold here
+    if similarity_scores[0, most_similar_index] < 0.6:  # Set your desired threshold here
         return "I'm sorry, I don't understand, it is truly my fault and never yours. Please try again."
 
     # Otherwise, return the corresponding answer
